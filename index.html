@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Career Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        select, button {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f8;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+select, button {
+    margin: 15px 0;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+select {
+    appearance: none;
+    background-color: #f9f9f9;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+select:hover {
+    border-color: #bbb;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #2471a3;
+}
+
+optgroup {
+    font-size: 16px;
+    color: #777;
+    font-style: italic;
+}
+
+option {
+    font-size: 16px;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Find Company Career Pages</h2>
+    <div class="container">
+        <select id="companySelect">
+            <option value="">Select a Company</option>
+            <optgroup label="Tech Companies">
+                <option value="google">Google</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="apple">Apple</option>
+                <option value="amazon">Amazon</option>
+                <option value="facebook">Facebook</option>
+                <option value="infosys">Infosys</option>
+                <option value="tcs">TCS</option>
+                <option value="2Base">2Base Technologies Pvt Ltd</option>
+                <option value="2Hats">2Hats Logic Solutions Pvt. Ltd.</option>
+                <option value="42Square">42Square Technologies</option>
+                <option value="9Commerce">9Commerce Technologies</option>
+                <option value="Aabasoft">Aabasoft Technologies India Private Limited</option>
+                <option value="Aarbee">Aarbee Structures Pvt.Ltd</option>
+                <option value="Abel">Abel Techsoft Private Limited</option>
+                <option value="Acabes">Acabes International Pvt. Ltd.</option>
+                <option value="Accelray">Accelray Technologies Pvt Ltd</option>
+                <option value="Acube">Acube Innovations</option>
+                <option value="adesso">adesso India Private Ltd</option>
+                <option value="Admaren">Admaren Tech Pvt Ltd</option>
+                <option value="Advenser">Advenser Engineering Services Private Limited</option>
+                <option value="ACS">Affiliated Computer Services of India, A Xerox Company</option>
+                <option value="Airo">Airo Global Software Pvt Ltd</option>
+                <option value="Airpay">Airpay Financial Technologies Pvt. Ltd</option>
+                <option value="AlignMinds">AlignMinds Technologies</option>
+                <option value="ALTOS">ALTOS Technologies</option>
+                <option value="AmaraRaja">Amara Raja Design Alpha Private Limited</option>
+                <option value="Amatosoft">Amatosoft</option>
+                <option value="AMIYON">AMIYON SOLUTIONS PVT LTD.</option>
+                <option value="AMLA">AMLA CONSULTANCY PVT LTD</option>
+                <option value="AMPLITUDE">AMPLITUDE SOFTWARE SYSTEMS PRIVATE LIMITED</option>
+                <option value="Appadore">Appadore Private Limited</option>
+                <option value="AppliedPayments">Applied Payments Technology Pvt Ltd.</option>
+                <option value="Approcker">Approcker Technologies Pvt Ltd</option>
+                <option value="AppsTeam">Apps Team Technologies Pvt.Ltd.</option>
+                <option value="Apro">Apro IT Solutions Pvt Ltd</option>
+                <option value="Armia">Armia Systems Pvt. Ltd</option>
+                <option value="Array">Array Platforms Pvt Ltd</option>
+    option value="Art">Art Technology and Software.</option>
+                <option value="Aspire">Aspire Systems Digital Private Limited</option>
+                <option value="AVENTUS">AVENTUS INFORMATICS</option>
+                <option value="Ayata">Ayata Commerce Tech Solutions Pvt Ltd</option>
+                <option value="Banzan">Banzan Studios</option>
+                <option value="Beinex">Beinex Consulting Pvt Ltd</option>
+                <option value="BethSoft">Beth Soft Technologies India Private Limited</option>
+                <option value="Bhooshan">Bhooshan's Junior</option>
+                <option value="Binaries">Binaries</option>
+                <option value="BJCorps">BJ Corps</option>
+                <option value="Braddock">Braddock Infotech Pvt. Ltd.</option>
+                <option value="Braid">Braid Technologies Pvt. Ltd</option>
+                <option value="Bramma">Bramma IT Solutions</option>
+                <option value="Brennan">Brennan IT India Private Limited</option>
+                <option value="BroadTech">BroadTech IT Solutions Pvt Ltd</option>
+                <option value="Bytestrone">Bytestrone India Private Limited</option>
+                <option value="Cabot">Cabot Technology Solutions Pvt. Ltd.</option>
+                <option value="Calpine">Calpine Group</option>
+                <option value="CAROL">CAROL SOLUTIONS</option>
+                <option value="Cascade">Cascade Revenue Management Pvt. Ltd</option>
+                <option value="Cavli">Cavli Wireless</option>
+                <option value="CCS">CCS Technologies (P) Ltd</option>
+                <option value="CEREIV">CEREIV Advisory LLP</option>
+                <option value="Classic">Classic Technologies & Business Solutions Pvt. Ltd.</option>
+                <option value="ClaySys">ClaySys Technologies Pvt.Ltd</option>
+                <option value="Cloudium">Cloudium Software Pvt. Ltd.</option>
+                <option value="Cocoalabs">Cocoalabs India Pvt Ltd</option>
+                <option value="CodeDesign">CodeDesign Technologies Pvt Ltd</option>
+                <option value="Codelynks">Codelynks Software Solutions Private Limited</option>
+                <option value="CodeNext">CodeNext Technologies Pvt. Ltd.</option>
+                <option value="Codework">Codework Solutions Pvt Ltd.</option>
+                <option value="Codmeric">Codmeric Infotech Pvt. Ltd.</option>
+                <option value="Cognicor">Cognicor Technologies Pvt.Ltd</option>
+                <option value="Cognizant">Cognizant Technology Solutions</option>
+                <option value="Coinone">Coinone Global Solutions Pvt Ltd</option>
+                <option value="COMNSEC">COMNSEC Technologies Pvt. Ltd</option>
+                <option value="Conduent">Conduent Business Services LLP</option>
+                <option value="ContactPoint">ContactPoint 360</option>
+                <option value="CoolMinds">CoolMinds Technologies Pvt Ltd.</option>
+                <option value="CORRA">CORRA</option>
+                <option value="Crossgen">Crossgen Technologies</option>
+                <option value="Cubet">Cubet Techno Labs Pvt.Ltd</option>
+                <option value="Cybrosys">Cybrosys Technologies Pvt. Ltd.</option>
+                <option value="Daddara">Daddara</option>
+                <option value="Daskalos">Daskalos Virtual Academy Pvt Limited</option>
+                <option value="Dataequinox">Dataequinox</option>
+                <option value="Datafloat">Datafloat Technologies India Pvt Ltd</option>
+                <option value="DATAMATRIX">DATAMATRIX INFOTECH PVT LTD.</option>
+                <option value="Datum">Datum Innovation</option>
+                <option value="Digiora">Digiora Technologies Pvt.Ltd.</option>
+                <option value="Dimensions">Dimensions Cybertech India Pvt. Ltd.</option>
+                <option value="DOCGIANT">DOCGIANT SERVICES INDIA PVT.LTD.</option>
+                <option value="Dooth">Dooth Internet Service Pvt. Ltd.</option>
+                <option value="DotIn">Dot In Technologies</option>
+                <option value="Dynactionize">Dynactionize India Pvt Ltd</option>
+                <option value="Dynamed">Dynamed Healthcare Solutions Pvt.Ltd.</option>
+                <option value="Edstem">Edstem Technologies Pvt Ltd</option>
+                <option value="EGC">EGC GLOBAL SERVICES INDIA PVT LTD</option>
+                <option value="Electrifex">Electrifex Technologies Pvt. Ltd</option>
+                <option value="ELEMMENT">ELEMMENT FAÇADE Pvt Ltd</option>
+                <option value="Elixr">Elixr Labs Technologies Private Limited</option>
+                <option value="Empay">Empay Software Solutions Private Limited</option>
+                <option value="Empress">Empress InfoTech</option>
+                <option value="Emsyne">Emsyne Technologies Private Limited</option>
+                <option value="Endeion">Endeion Engineering Services Pvt.Ltd.</option>
+                <option value="EnergyScape">EnergyScape Renewables LLP</option>
+                <option value="EPI-USE">EPI-USE India Pvt.Ltd.</option>
+                <option value="Epixel">Epixel Solutions Pvt Ltd</option>
+                <option value="Eqsoft">Eqsoft Business Solutions Pvt Ltd</option>
+                <option value="ESSBEE">ESSBEE TECHSTRATEGIES PRIVATE LIMITED</option>
+                <option value="EXACORE">EXACORE IT SOLUTIONS PRIVATE LIMITED</option>
+                <option value="Exor">Exor India Pvt Ltd.</option>
+                <option value="Expeed">Expeed Software Private Limited</option>
+                <option value="Experion">Experion Technologies</option>
+                <option value="EXPONENTIAL">EXPONENTIAL DIGITAL SOLUTIONS PVT.LTD.</option>
+                <option value="Extravelmoney">Extravelmoney Technosol Private Limited</option>
+                <option value="Facade">Facade Global Pvt. Ltd.</option>
+                <option value="FDC">FDC Web Technologies Pvt Ltd</option>
+                <option value="Feathersoft">Feathersoft Info Solutions Private Limited</option>
+                <option value="Fingent">Fingent Global Solutions</option>
+                <option value="FIRMINIQ">FIRMINIQ SYSTEMS</option>
+                <option value="Focaloid">Focaloid Technologies Private Limited</option>
+                <option value="FoundingMinds">Founding Minds Software Pvt.Ltd</option>
+                <option value="Fragomen">Fragomen Immigration Services India Private Limited</option>
+                <option value="Galactico">Galactico Express Solutions Pvt. Ltd.</option>
+                <option value="GALTech">GALTech Technologies Pvt Ltd</option>
+                <option value="GAPBLUE">GAPBLUE SOFTWARE LABS PVT LTD</option>
+                <option value="GEOJIT">GEOJIT TECHNOLOGIES PVT LTD</option>
+                <option value="Gewan">Gewan Info Tech Solutions India Pvt Ltd.</option>
+                <option value="GIS">GIS AXIOM Pvt. Ltd.</option>
+                <option value="Gizmeon">Gizmeon Technologies Private Limited</option>
+                <option value="Glitz">Glitz IT Solutions</option>
+                <option value="GlobalInfonet">Global Infonet Inc</option>
+                <option value="GlobalSurf">Global Surf IT Pvt Ltd</option>
+                <option value="GoodMethods">Good Methods Software Solutions Private Limited (CareRevenue)</option>
+                <option value="GRAMPRO">GRAMPRO BUSINESS SERVICES PVT. LTD</option>
+                <option value="Grapelime">Grapelime Innovations Private Limited.</option>
+                <option value="Greenworld">Greenworld International Enterprise Private Limited</option>
+                <option value="HashRoot">HashRoot Ltd</option>
+                <option value="Hatio">Hatio Innovations Private Limited</option>
+                <option value="Heidelsoft">Heidelsoft Technologies Private Limited</option>
+                <option value="HHBackOffice">HH Back Office Services Pvt Ltd</option>
+                <option value="Hotpack">Hotpack Global</option>
+                <option value="HTIC">HTIC Global</option>
+                <option value="Hubbell">Hubbell Burndy India</option>
+                <option value="IBS">IBS Software</option>
+                <option value="iDatalytics">iDatalytics Pvt. Ltd.</option>
+                <option value="Ignitarium">Ignitarium Technology Solutions Private Limited</option>
+                <option value="iLeaf">iLeaf Solutions Pvt Ltd.</option>
+                <option value="Impaqtive">Impaqtive Technologies India Pvt Ltd</option>
+                <option value="In-Tech">In-Tech Group India Private Limited</option>
+                <option value="InApp">InApp Information Technologies India Pvt Ltd</option>
+                <option value="Incede">Incede Technologies Pvt Ltd</option>
+                <option value="IIMK">Indian Institute of Management - Kozhikode</option>
+                <option value="InerG">InerG Software Innovations Pvt.Ltd.</option>
+                <option value="Infenox">Infenox Technologies India Pvt Ltd</option>
+                <option value="Infintor">Infintor Solutions LLP</option>
+                <option value="INFOCYLANZ">INFOCYLANZ PVT. LTD.</option>
+                <option value="Infosmart">Infosmart Technologies Private Limited</option>
+                <option value="Innovature">Innovature Software Labs (P) Ltd</option>
+                <option value="Inntot">Inntot Technologies Private Limited</option>
+                <option value="Inspired">Inspired Software Development (India) LLP</option>
+                <option value="Inspirisys">Inspirisys Solutions Limited</option>
+                <option value="Inspite">Inspite Technologies Pvt.Ltd</option>
+                <option value="Intbrains">Intbrains Private Limited</option>
+                <option value="Intelliflo">Intelliflo Software India Pvt Ltd</option>
+                <option value="Internland">Internland Technology Services Private Limited</option>
+                <option value="Jachoos">Jachoos Technologies Private Limited</option>
+                <option value="JKLucent">JK Lucent Pvt Ltd</option>
+                <option value="Jobin">Jobin & Jismi Pvt. Ltd.</option>
+                <option value="JTSi">JTSi Technologies India Private Limited</option>
+                <option value="Kakapo">Kakapo Systems India Private Limited</option>
+                <option value="KATZION">KATZION TECHNOLOGY SOLUTIONS LLP</option>
+                <option value="KLKoncepts">KL Koncepts Lab Media and IT Park</option>
+                <option value="KnowBe4">KnowBe4 India Private Limited</option>
+                <option value="KOTT">KOTT SOFTWARE PRIVATE LIMITED</option>
+                <option value="Krythium">Krythium Solutions Private Limited</option>
+                <option value="LANWARE">LANWARE SOLUTIONS</option>
+                <option value="Lektik">Lektik Consulting</option>
+                <option value="LINXAS">LINXAS IT CONSULTING PRIVATE LIMITED</option>
+                <option value="Litmus7">Litmus7 Systems Consulting Pvt.Ltd</option>
+                <option value="Loyal">Loyal IT Solutions Pvt Ltd</option>
+                <option value="LucidPlus">LucidPlus IT Solutions</option>
+                <option value="Luure">Luure.ai LLP</option>
+                <option value="Mantle">Mantle Solutions Private Limited</option>
+                <option value="Mantra">Mantra IT Solutions</option>
+                <option value="MapleTech">MapleTech Space Pvt Ltd</option>
+                <option value="MarketBytes">MarketBytes WebWorks Private Limited</option>
+                <option value="MARLABS">MARLABS SOFTWARE</option>
+                <option value="Mashuptech">Mashuptech</option>
+                <option value="MAXXION">MAXXION SYSTEMS PRIVATE LIMITED</option>
+                <option value="McFadyen">McFadyen Digital</option>
+                <option value="MediaSystems">Media Systems India</option>
+                <option value="Merabt">Merabt Technologies Private Limited</option>
+                <option value="MERP">MERP Systems Private Limited</option>
+                <option value="Metclouds">Metclouds Technologies Pvt Ltd</option>
+                <option value="Milestone">Milestone Technologies</option>
+                <option value="Millennium">Millennium InfoLogic</option>
+                <option value="Mindcurv">Mindcurv Technology Solutions Pvt. Ltd.</option>
+                <option value="MindLabs">MindLabs Consultancy Services LLP</option>
+                <option value="Mitsogo">Mitsogo</option>
+                <option value="Mitz">Mitz (Miztech AI Minds Pvt Ltd)</option>
+                <option value="Mozilor">Mozilor Technologies Pvt. Ltd.</option>
+                <option value="NAS">NAS Infosolutions Pvt Ltd</option>
+                <option value="Navicater">Navicater Solutions India Pvt Ltd</option>
+                <option value="NDimensionZ">NDimensionZ Solutions Pvt.Ltd.</option>
+                <option value="Neem">Neem Info Solutions Pvt. Ltd.</option>
+                <option value="Nesote">Nesote Technologies Pvt Ltd</option>
+                <option value="Nestsoft">Nestsoft TechnoMaster</option>
+                <option value="Netsentries">Netsentries Infosec Solutions Pvt.Ltd.</option>
+                <option value="NewAgeSys">NewAgeSys Solutions (P) Ltd.</option>
+                <option value="NextApps">Next Apps</option>
+                <option value="Niaway">Niaway Technologies Pvt Ltd</option>
+                <option value="Noa">Noa Infosolutions LLP</option>
+                <option value="NOMD">NOMD Technologies</option>
+                <option value="Nuvento">Nuvento Systems Private Limited</option>
+                <option value="Obidos">Obidos Technologies (P) Ltd</option>
+                <option value="Obvious">Obvious AI Technology Pvt Ltd</option>
+                <option value="Octotech">Octotech Solutions</option>
+                <option value="Offline">Offline Human Studios</option>
+                <option value="Onesoft">Onesoft Technologies LLP</option>
+                <option value="Opshore">Opshore Talent Solutions Pvt.Ltd.</option>
+                <option value="Orestes">Orestes Technologies Pvt Ltd</option>
+                <option value="Orion">Orion India Systems Pvt. Ltd.</option>
+                <option value="Ormeon">Ormeon IT Consulting Pvt Ltd</option>
+                <option value="ORTHOFX">ORTHOFX PRIVATE LIMITED</option>
+                <option value="Outsource">Outsource Partners International</option>
+                <option value="Overbrook">Overbrook Technology Services (P) Ltd</option>
+                <option value="Pagematics">Pagematics India Pvt. Ltd.</option>
+                <option value="Paradigm">Paradigm IT Private Limited</option>
+                <option value="PaulCart">PaulCart E Commerce Pvt. Ltd.</option>
+                <option value="Pearlsoft">Pearlsoft Technologies LLP</option>
+                <option value="Penguin">Penguin Data Centre Pvt.Ltd.</option>
+                <option value="Phases">Phases India Technology Solutions Pvt Ltd.</option>
+                <option value="Pinetech">Pinetech IT Solutions P Ltd</option>
+                <option value="Pinmicro">Pinmicro India Pvt.Ltd.</option>
+                <option value="PiServe">PiServe Solutions Pvt Ltd</option>
+                <option value="PIT">PIT Solutions Private Limited</option>
+                <option value="Pixdynamics">Pixdynamics</option>
+                <option value="Policy4us">Policy4us Insurance Web Aggregator Pvt Ltd</option>
+                <option value="Portrave">Portrave Solutions Pvt Ltd</option>
+                <option value="Prevalent">Prevalent AI</option>
+                <option value="PrimeCrown">PrimeCrown Technologies (P) Limited</option>
+                <option value="Privo">Privo TechCorp Private Limited</option>
+                <option value="Pueblo">Pueblo Shades Pvt.Ltd</option>
+                <option value="Pumex">Pumex InfoTech Pvt Ltd</option>
+                <option value="QBurst">QBurst Technologies</option>
+                <option value="QCVerify">QC Verify Private Limited</option>
+                <option value="Qubeslab">Qubeslab Technologies Private Limited</option>
+                <option value="Quest">Quest Global Engineering Services Pvt Ltd</option>
+                <option value="Radiant">Radiant Acemoney</option>
+                <option value="Rainybits">Rainybits Technology Pvt Ltd</option>
+                <option value="Regent">Regent Global Services (India) Pvt.Ltd.</option>
+                <option value="Retyn">Retyn Business Solution Pvt. Ltd.</option>
+                <option value="REXAV">REXAV LLP</option>
+                <option value="Roberts">Roberts Design Services</option>
+                <option value="ROGERSOFT">ROGERSOFT Technologies</option>
+                <option value="SaNDS">SaNDS Lab</option>
+                <option value="SayOne">SayOne Technologies Pvt.Ltd.</option>
+                <option value="SBL">SBL Knowledge Services Pvt Ltd</option>
+                <option value="Seeroo">Seeroo IT Solutions</option>
+                <option value="Seguro">Seguro Technologies</option>
+                <option value="SEIDOR">SEIDOR Opentrends</option>
+                <option value="Senscript">Senscript Technologies Pvt Ltd</option>
+                <option value="Servsys">Servsys Technology Services India Pvt Ltd</option>
+                <option value="Silverbloom">Silverbloom Technologies</option>
+                <option value="Skybertech">Skybertech IT Innovation Pvt Ltd</option>
+                <option value="SmartFox">SmartFox Technologies</option>
+                <option value="SMEC">SMEC AUTOMATION PVT LTD</option>
+                <option value="Softop">Softop Solutions Pvt Ltd</option>
+                <option value="Softspace">Softspace Infotech Pvt Ltd</option>
+                <option value="Soulxes">Soulxes Technologies Pvt Ltd</option>
+                <option value="SparkSupport">SparkSupport Infotech Pvt Ltd</option>
+                <option value="Spawoz">Spawoz Technologies Pvt. Ltd.</option>
+                <option value="Speridian">Speridian Technologies Pvt Ltd</option>
+                <option value="Spiderline">Spiderline Technologies</option>
+                <option value="SS">SS Consulting</option>
+                <option value="STEIGEND">STEIGEND IT SOLUTIONS</option>
+                <option value="SteppingStone">Stepping Stone Consultancy Services</option>
+                <option value="Strands">Strands Energy Pvt. Ltd</option>
+                <option value="StreamPerfect">Stream Perfect Global Services (SPGS)</option>
+                <option value="SupportHub">SupportHub360</option>
+                <option value="SurveySparrow">SurveySparrow Pvt Ltd</option>
+                <option value="Syriac">Syriac Consultancy Services Private Limited</option>
+                <option value="SysTalent">SysTalent Software Private Limited</option>
+                <option value="TalkDigital">Talk Digital Pvt. Ltd.</option>
+                <option value="Tamcherry">Tamcherry Technologies Private Limited</option>
+                <option value="Tata">Tata Consultancy Services</option>
+                <option value="TECFORZ">TECFORZ INNOVATIONS</option>
+                <option value="TechAventure">Tech Aventure</option>
+                <option value="Techfriar">Techfriar Technologies</option>
+                <option value="Techgentsia">Techgentsia Software Technologies Private Limited</option>
+                <option value="TechNeurons">TechNeurons Consulting Solutions Private Limited</option>
+                <option value="Technowave">Technowave ID Systems PVT.LTD.</option>
+                <option value="Techpullers">Techpullers Technology Solutions Pvt Ltd.</option>
+                <option value="TechTaliya">TechTaliya Informatics Pvt. Ltd.</option>
+                <option value="Techversant">Techversant Infotech Pvt Ltd</option>
+                <option value="Techware">Techware Lab Pvt.Ltd.</option>
+                <option value="Techxora">Techxora Private Limited</option>
+                <option value="Tecnostac">Tecnostac Systems Private Limited</option>
+                <option value="TELIOUS">TELIOUS TECHNOLOGIES PRIVATE LIMITED</option>
+                <option value="Terrific">Terrific Minds Private Limited</option>
+                <option value="TESTINGMAVENS">TESTING MAVENS SOFTWARE PVT.LTD</option>
+                <option value="TheAmsive">The Amsive Solutions</option>
+                <option value="Thinkpalm">Thinkpalm Technologies Pvt.Ltd</option>
+                <option value="Thomsun">Thomsun Infocare LLP</option>
+                <option value="Titan">Titan Tech Emirates Pvt Ltd</option>
+                <option value="Toobler">Toobler Technologies Pvt. Ltd.</option>
+                <option value="TouchWorld">TouchWorld Technology</option>
+                <option value="Trafoss">Trafoss Pvt.Ltd</option>
+                <option value="Tranzmeo">Tranzmeo</option>
+                <option value="Travancore">Travancore Analytics Pvt.Ltd.</option>
+                <option value="Tukxi">Tukxi India Private Ltd</option>
+                <option value="Turqosoft">Turqosoft Solutions Pvt. Ltd.</option>
+                <option value="TutorComp">TutorComp Infotech (I) Pvt.Ltd</option>
+                <option value="TUTTIFRUTTI">TUTTIFRUTTI INTERACTIVE</option>
+                <option value="Urolime">Urolime Technologies Private Limited</option>
+                <option value="USTechnology">US Technology International Pvt Ltd</option>
+                <option value="Vaisesika">Vaisesika Consulting Private Limited</option>
+                <option value="Valoriz">Valoriz Digital Pvt. Ltd.</option>
+                <option value="ValueMentor">ValueMentor Infosec Pvt. Ltd.</option>
+                <option value="Varishtha">Varishtha Infotech Services Pvt Ltd.</option>
+                <option value="Veeble">Veeble SoftTech (P) Ltd.</option>
+                <option value="Verteil">Verteil Technologies Private Limited</option>
+                <option value="Viewy">Viewy Digital P(Ltd)</option>
+                <option value="Violet">Violet Frames</option>
+                <option value="VIPoint">VIPoint Solutions Pvt Ltd</option>
+                <option value="VirtualSys">Virtual Sys Technologies</option>
+                <option value="Vortexen">Vortexen Dynamics</option>
+                <option value="Voxtron">Voxtron Solutions LLP</option>
+                <option value="Voyager">Voyager IT Solutions Pvt Ltd</option>
+                <option value="Voyon">Voyon Technology Pvt Ltd</option>
+                <option value="Vtrio">Vtrio Solutions Private Limited</option>
+                <option value="VVDN">VVDN Technologies Pvt Ltd</option>
+                <option value="Wazeefa1">Wazeefa1 Technologies Pvt. Ltd.</option>
+                <option value="Webandcrafts">Webandcrafts</option>
+                <option value="Webdura">Webdura Technologies</option>
+                <option value="WhiteRabbit">White Rabbit Group</option>
+                <option value="Windfall">Windfall Productions Pvt.Ltd.</option>
+                <option value="Wipro">Wipro Limited</option>
+                <option value="WOC">WOC Branding Systems Pvt Ltd</option>
+                <option value="WORKSENT">WORKSENT TECHNOLOGIES PVT LTD (formerly EYNETECH)</option>
+                <option value="Woxro">Woxro</option>
+                <option value="Xime">Xime Infosolutions Pvt Ltd</option>
+                <option value="Yatnam">Yatnam Technologies</option>
+                <option value="Yavun">Yavun Technologies</option>
+                <option value="Yellowfish">Yellowfish Digital Innovations Pvt Ltd.</option>
+                <option value="Ynot">Ynot Infosolutions</option>
+                <option value="Zamorins">Zamorins Solutions Pvt LTD</option>
+                <option value="Zapare">Zapare Technologies Private Limited</option>
+                <option value="Zealogics">Zealogics IT Solutions</option>
+                <option value="Zellis">Zellis HR India Pvt.Ltd.</option>
+                <option value="Zinbay">Zinbay India Pvt.Ltd.</option>
+                <option value="ZineMind">ZineMind Technologies</option>
+                <option value="Zoiteckh">Zoiteckh Informations Solutions</option>
+            </optgroup>
+            <optgroup label="Non-Tech Companies">
+                <option value="walmart">Walmart</option>
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="mcdonalds">McDonald's</option>
+            </optgroup>            <
+        </select>
+        <button type="button" onclick="findCareerPage()">Search</button>
+        <p id="careerLink"></p>
+    </div>
+
+    <script>
+        function findCareerPage() {
+            const company = document.getElementById('companySelect').value;
+            const linkContainer = document.getElementById('careerLink');
+            
+            if (company) {
+                const careerUrl = `https://${company}.com/careers`;
+                linkContainer.innerHTML = `<a href="${careerUrl}" target="_blank">Open Career Page</a>`;
+            } else {
+                linkContainer.innerHTML = "";
+            }
+        }
+    </script>
+    <script>
+        function openCareerPage() {
+            var select = document.getElementById("companySelect");
+            var selectedValue = select.options[select.selectedIndex].value;
+
+            if (selectedValue) {
+                window.open(selectedValue, '_blank');
+            } else {
+                alert("Please select a company.");
+            }
+        }
+    </script>
+</body>
+</html>
